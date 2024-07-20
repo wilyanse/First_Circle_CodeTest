@@ -46,25 +46,20 @@ def correct_amount(process_transactions, process_pricing):
     process_transactions.clean_data(process_transactions.dataframe)
     process_transactions.type_check(process_transactions.dataframe)
 
-def main():
-    directory = r'1_DataSources'
-    patterns = find_csv_files(directory)
-    columns = [
-        ['user_id', 'name', 'email', 'date_joined'],
-        ['trans_id', 'user_id', 'product', 'amount', 'trans_date'],
-        ['puk', 'product', 'price']
-    ]
-    types = [
-        ['int', 'str', 'str', 'datetime'],
-        ['int', 'int', 'str', 'int', 'datetime'],
-        ['int', 'str', 'int']
-    ]
-    process_users = Processor(columns[0], types[0])
-    
-    process_transactions = Processor(columns[1], types[1])
-    process_pricing = Processor(columns[2], types[2])
-    process_files(patterns, process_users, process_transactions, process_pricing)
-    correct_amount(process_transactions, process_pricing)
-
-if __name__ == "__main__":
-    main()
+directory = r'1_DataSources'
+patterns = find_csv_files(directory)
+columns = [
+    ['user_id', 'name', 'email', 'date_joined'],
+    ['trans_id', 'user_id', 'product', 'amount', 'trans_date'],
+    ['puk', 'product', 'price']
+]
+types = [
+    ['int', 'str', 'str', 'datetime'],
+    ['int', 'int', 'str', 'int', 'datetime'],
+    ['int', 'str', 'int']
+]
+process_users = Processor(columns[0], types[0])
+process_transactions = Processor(columns[1], types[1])
+process_pricing = Processor(columns[2], types[2])
+process_files(patterns, process_users, process_transactions, process_pricing)
+correct_amount(process_transactions, process_pricing)
