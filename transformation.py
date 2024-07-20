@@ -12,6 +12,8 @@ def product_upper(transactions):
 def total_amount(transactions, users):
     summed_df = transactions.groupby('user_id')['amount'].sum().reset_index()
     merged_df = pd.merge(users, summed_df, on='user_id')
+    merged_df = merged_df.rename(columns={'amount': 'total_spent'})
+    merged_df.set_index('user_id', inplace=True)
     print(merged_df.head())
 
 users = processing.process_users.get_dataframe()
