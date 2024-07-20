@@ -1,0 +1,51 @@
+2024-07-20 16:25:36,814 - 1_DataSources\data\pricing-1.csv - INFO - Adding 6 files from: 1_DataSources\data\pricing-1.csv
+2024-07-20 16:25:36,836 - 1_DataSources\data\transactions-1.csv - INFO - Adding 83 files from: 1_DataSources\data\transactions-1.csv
+2024-07-20 16:25:36,840 - 1_DataSources\data\users-1.csv - INFO - Adding 5 files from: 1_DataSources\data\users-1.csv
+2024-07-20 16:30:04,538 - processing - INFO - puk        0
+product    0
+price      0
+dtype: int64 are going to be dropped because they are null.
+2024-07-20 16:30:04,540 - processing - INFO - Adding 6 entries from: 1_DataSources\data\pricing-1.csv
+2024-07-20 16:30:04,543 - processing - INFO - trans_id      0
+user_id       0
+product       0
+amount        0
+trans_date    1
+dtype: int64 are going to be dropped because they are null.
+2024-07-20 16:30:04,550 - processing - INFO - Adding 83 entries from: 1_DataSources\data\transactions-1.csv
+2024-07-20 16:30:04,553 - processing - INFO - user_id        0
+name           0
+email          0
+date_joined    0
+dtype: int64 are going to be dropped because they are null.
+2024-07-20 16:30:04,554 - processing - INFO - Adding 5 entries from: 1_DataSources\data\users-1.csv
+2024-07-20 16:30:04,559 - processing - INFO - trans_id      0
+user_id       0
+product       0
+amount        0
+trans_date    0
+dtype: int64 are going to be dropped because they are null.
+2024-07-20 16:30:32,982 - processing - INFO - puk        0
+product    0
+price      0
+dtype: int64 are going to be dropped because they are null.
+2024-07-20 16:30:32,983 - processing - INFO - Adding 6 entries from: 1_DataSources\data\pricing-1.csv
+2024-07-20 16:30:32,989 - processing - INFO - trans_id      0
+user_id       0
+product       0
+amount        0
+trans_date    1
+dtype: int64 are going to be dropped because they are null.
+2024-07-20 16:30:32,991 - processing - INFO - Adding 83 entries from: 1_DataSources\data\transactions-1.csv
+2024-07-20 16:30:32,995 - processing - INFO - user_id        0
+name           0
+email          0
+date_joined    0
+dtype: int64 are going to be dropped because they are null.
+2024-07-20 16:30:32,998 - processing - INFO - Adding 5 entries from: 1_DataSources\data\users-1.csv
+2024-07-20 16:30:33,004 - processing - INFO - trans_id      0
+user_id       0
+product       0
+amount        0
+trans_date    0
+dtype: int64 are going to be dropped because they are null.
